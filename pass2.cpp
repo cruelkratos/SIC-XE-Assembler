@@ -1,4 +1,3 @@
-/*Code for pass2*/
 
 #include "pass1.cpp"
 
@@ -14,18 +13,18 @@ ofstream printtab ;
 string writestring ;
   
 //*******************
-
+int program_counter, base_register_value, currentTextRecordLength;
+bool nobase;
 bool isComment;
-string label,opcode,operand,comment;
-string operand1,operand2;
+string label,operand,opcode,comment;
+string operand2,operand1;
 
 int lineNumber,blockNumber,address,startAddress;
 string objectCode, writeData, currentRecord, modificationRecord="M^", endRecord, write_R_Data, write_D_Data,currentSectName="DEFAULT";
 int sectionCounter=0;
 int program_section_length=0;
 
-int program_counter, base_register_value, currentTextRecordLength;
-bool nobase;
+
 /*Declaration ends*/
 
 string readTillTab(string data,int& index){

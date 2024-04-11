@@ -1,5 +1,5 @@
 /*Code for pass1*/
-#include "utility.cpp" /*conatins all important headers*/
+#include "alr.cpp" /*conatins all important headers*/
 #include "tables.cpp"
 
 using namespace std;
